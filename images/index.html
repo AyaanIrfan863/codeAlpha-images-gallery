@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frame — Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">FRAME<span>.</span></a>
+    <p>A little world through a lens</p>
+  </header>
+
+  <main class="gallery-wrap">
+    <section class="intro">
+      <p class="eyebrow">CURATED COLLECTION</p>
+      <h1>Moments worth <span>keeping.</span></h1>
+      <p class="subtitle">Explore the beauty in the little details.</p>
+    </section>
+
+    <nav class="filters" aria-label="Filter images">
+      <button class="filter active" data-category="all">All photos</button>
+      <button class="filter" data-category="nature">Nature</button>
+      <button class="filter" data-category="architecture">Architecture</button>
+      <button class="filter" data-category="animals">Animals</button>
+    </nav>
+
+    <section class="gallery" id="gallery" aria-label="Image gallery"></section>
+    <p class="gallery-note" id="gallery-note">Showing all photos</p>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="close" aria-label="Close image viewer">&times;</button>
+    <button class="nav prev" id="prev" aria-label="Previous image">&#10094;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption>
+        <span id="lightbox-title"></span>
+        <span id="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <button class="nav next" id="next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer><span>FRAME.</span> A gallery of beautiful things.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
